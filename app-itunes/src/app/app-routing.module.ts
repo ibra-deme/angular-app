@@ -8,10 +8,8 @@ import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   { path: 'librairie', component: LibrairieComponent },
-  { path: 'music/musicId', component: MusicComponent },
-  { path: 'music-list', component: MusicListComponent },
+  { path: 'music/:musicId', component: MusicComponent },
   { path: 'search', component: SearchComponent },
-  { path: 'header', component: HeaderComponent },
   { path: '', redirectTo: 'search', pathMatch: 'full' },
 ];
 
